@@ -6,8 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-COPY pyproject.toml .
-# Stub the package so pip can resolve the editable install and cache the deps layer
+COPY pyproject.toml README.md ./
 RUN mkdir -p app && touch app/__init__.py
 RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -e ".[dev]"
 
