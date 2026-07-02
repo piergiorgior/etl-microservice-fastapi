@@ -2,8 +2,6 @@
 
 A **production-ready FastAPI microservice** that exposes a REST API for triggering, monitoring, and managing ETL pipeline runs, protected by JWT Bearer authentication.
 
-Built to showcase Senior Data Platform Engineering practices: async-first design, strong typing, clean layered architecture, and a single-command local environment.
-
 ---
 
 ## Architecture
